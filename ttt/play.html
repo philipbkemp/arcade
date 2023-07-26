@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="../favicon.png" />
+		<title>Phil's Arcade | Tic-Tac-Toe</title>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+		<link href="../global/styles.css" rel="stylesheet" />
+		<link href="../global/menu.css" rel="stylesheet" />
+		<link href="ttt-styles.css" rel="stylesheet" />
+	</head>
+	<body class="game">
+
+		<div class="container-fluid">
+			<div class="row pt-2">
+				<div class="col-12 col-sm-3 col-md-2">
+					<a href="index.html" class="btn btn-outline-primary">
+						<i class="fa-solid fa-angle-left fa-fw fa-3x"></i>
+						Back
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="ttt game-area">
+			<table>
+				<tbody>
+					<tr>
+						<td data-row="1" data-col="1" data-content=""></td>
+						<td data-row="1" data-col="2" data-content=""></td>
+						<td data-row="1" data-col="3" data-content=""></td>
+					</tr>
+					<tr>
+						<td data-row="2" data-col="1" data-content=""></td>
+						<td data-row="2" data-col="2" data-content=""></td>
+						<td data-row="2" data-col="3" data-content=""></td>
+					</tr>
+					<tr>
+						<td data-row="3" data-col="1" data-content=""></td>
+						<td data-row="3" data-col="2" data-content=""></td>
+						<td data-row="3" data-col="3" data-content=""></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="modal fade" id="outcome" tabindex="-1" aria-labelledby="outcomeLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="outcomeLabel">You win!</h1>
+					</div>
+					<div class="modal-body p-0">
+						<p class="lead text-center m-0"><span class="win">0</span> - <span class="loss">0</span></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="newRoundStarter">Start next round</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/f427f1d1bb.js" crossorigin="anonymous"></script>
+		<script src="ttt-script.js"></script>
+	</body>
+</html>

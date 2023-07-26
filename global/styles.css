@@ -1,8 +1,98 @@
 * {
-    font-family: Fira Sans,sans-serif
+    font-family: Fira Sans,sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
+    color: white;
+    font-family: Ubuntu,sans-serif;
+}
+
+code {
+    color: #85B2CD;
+}
+
+body.game {
+    background-color: #000000;
+}
+
+.btn-outline-primary {
+    border: 2px solid #2b5873 !important;
+    color: white;
+    box-shadow: -2px -1px 26px -2px rgba(255,255,255,0.5);
+    -webkit-box-shadow: -2px -1px 26px -2px rgba(255,255,255,0.5);
+    -moz-box-shadow: -2px -1px 26px -2px rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-outline-primary * {
+    color: white;
+}
+.btn-outline-primary:hover {
+    background-color: #2B587380;
+    color: white !important;
+}
+
+.game-area {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: 50vh;
+}
+
+.game-area {
+    position: relative;
+}
+.game-area * {
+    color: white;
+}
+.game-area.simonThinking > * {
+    opacity: 0.5;
+}
+.game-area.simonThinking:after {
+    content: "\f11a";
+    font-family: "Font Awesome 6 Free";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+
+    -webkit-animation-name: fa-shake;
+    animation-name: fa-shake;
+    -webkit-animation-duration: var(--fa-animation-duration,1s);
+    animation-duration: var(--fa-animation-duration,1s);
+    -webkit-animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+    -webkit-animation-timing-function: var(--fa-animation-timing,linear);
+    animation-timing-function: var(--fa-animation-timing,linear);
+    
+}
+
+#outcome .modal-header {
+    border-bottom: none;
+}
+#outcome .modal-header:not(.bg-success):not(.bg-danger) *,
+#outcome .modal-body *,
+#stats .modal-header * {
     color: #2b5873;
-    font-family: Ubuntu,sans-serif
+}
+#outcome .modal-footer {
+    border-top: none;
+}
+#outcome .btn-primary,
+#stats .btn-primary {
+    background-color: white;
+    border-color: #2b5873;
+    color: #2b5873;
+}
+#outcome .btn-primary:hover,
+#stats .btn-primary:hover {
+    background-color: #2B587380;
+    color: white;
 }
