@@ -1,0 +1,40 @@
+.simonsays table {
+	width: 75vw;
+	height: 75vh;
+	margin: 0 auto;
+}
+.simonsays table td div.ss-box {
+	height: 75%;
+	width: 75%;
+	margin: 0 auto;
+	opacity: 0.2;
+}
+.simonsays table td div.ss-box.pop {
+	opacity: 1;
+}
+.simonsays table td div.ss-box.ready {
+	opacity: 0.6;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.simonsays table td div.ss-box.ready:after {
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.simonsays table td div.ss-box.ready:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}

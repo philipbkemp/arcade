@@ -4,12 +4,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/x-icon" href="../favicon.png" />
-		<title>Phil's Arcade | Tic-Tac-Toe</title>
+		<title>Phil's Arcade | Simon Says</title>
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 		<link href="../global/styles.css" rel="stylesheet" />
 		<link href="../global/menu.css" rel="stylesheet" />
-		<link href="ttt-styles.css" rel="stylesheet" />
+		<link href="simonsays-styles.css" rel="stylesheet" />
 	</head>
 	<body class="game">
 
@@ -24,39 +24,23 @@
 			</div>
 		</div>
 
-		<div class="ttt game-area">
-			<table>
-				<tbody>
-					<tr>
-						<td data-row="1" data-col="1" data-content=""></td>
-						<td data-row="1" data-col="2" data-content=""></td>
-						<td data-row="1" data-col="3" data-content=""></td>
-					</tr>
-					<tr>
-						<td data-row="2" data-col="1" data-content=""></td>
-						<td data-row="2" data-col="2" data-content=""></td>
-						<td data-row="2" data-col="3" data-content=""></td>
-					</tr>
-					<tr>
-						<td data-row="3" data-col="1" data-content=""></td>
-						<td data-row="3" data-col="2" data-content=""></td>
-						<td data-row="3" data-col="3" data-content=""></td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="simonsays game-area">
+
 		</div>
 
 		<div class="modal fade" id="outcome" tabindex="-1" aria-labelledby="outcomeLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 				<div class="modal-content">
-					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="outcomeLabel">You win!</h1>
+					<div class="modal-header bg-success">
+						<h1 class="modal-title fs-5" id="outcomeLabel">Correct!</h1>
 					</div>
 					<div class="modal-body p-0">
-						<p class="lead text-center m-0"><span class="win">0</span> - <span class="loss">0</span></p>
+						<p class="lead text-center m-0">Level <span class="level">1</span> passed</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="newRoundStarter">Start next round</button>
+						<button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="newRoundStarterFail">Start from Level 1</button>
+						<button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal" id="tryAgain">Try again?</button>
 					</div>
 				</div>
 			</div>
@@ -66,6 +50,6 @@
 		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/f427f1d1bb.js" crossorigin="anonymous"></script>
 		<script src="../global/scripts.js"></script>
-		<script src="ttt-script.js"></script>
+		<script src="simonsays-script.js"></script>
 	</body>
 </html>

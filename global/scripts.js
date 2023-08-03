@@ -20,3 +20,12 @@ function killStats(game) {
 		grabStats(game);
 	}
 }
+
+function simonThinking() {
+	simonIsThinking = !simonIsThinking;
+	if ( simonIsThinking ) {
+		$(".game-area").addClass("simonThinking");
+	} else {
+		$(".game-area").removeClass("simonThinking");
+	}
+}

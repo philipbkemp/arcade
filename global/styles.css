@@ -110,9 +110,11 @@ body.game {
 }
 .modal .modal-header.bg-success {
     background-color: #2B7323 !important;
+    color: white;
 }
 .modal .modal-header.bg-danger {
     background-color: #73232B !important;
+    color: white;
 }
 .modal .modal-header h1 {
     color: white !important;

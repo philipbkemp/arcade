@@ -43,15 +43,6 @@ $(document).ready(function(){
 
 });
 
-function simonThinking() {
-	simonIsThinking = !simonIsThinking;
-	if ( simonIsThinking ) {
-		$(".game-area").addClass("simonThinking");
-	} else {
-		$(".game-area").removeClass("simonThinking");
-	}
-}
-
 function simonsTurn() {
 	options = [];
 	grid.forEach(function(r,rIndex){
