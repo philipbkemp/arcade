@@ -8,8 +8,8 @@ Everything here is pure CSS, JS, and HTML. Nothing fancy. Except maybe an Ajax c
 
 ## What games do you have on your phone?
 
-[Simon Says](https://philipbkemp.github.io/arcade/simonsays)
-[Tic-Tac-Toe](https://philipbkemp.github.io/arcade/ttt)
+- [Simon Says](https://philipbkemp.github.io/arcade/simonsays)
+- [Tic-Tac-Toe](https://philipbkemp.github.io/arcade/ttt)
 
 Check out the list of issues attached to this GitHub Project to see what wonderful things are coming, what's been suggested, and what I did wrong and need to fix.
 
